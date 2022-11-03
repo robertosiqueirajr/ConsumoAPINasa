@@ -1,0 +1,22 @@
+.widthElement{
+    width: 500px; 
+}
+
+.centerText{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: rgb(41, 41, 52);
+}
+
+.alignElem{
+    display: flex;
+    justify-content: center;
+}
+
+.mediaImg{
+    width: 600px;
+    height: auto;
+}
