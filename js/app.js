@@ -2,7 +2,8 @@ function fnAction(defineDate) {
 
     defineDate =  document.getElementById('date').value;
 
-    const URL = `https://api.nasa.gov/planetary/apod?api_key=m4pzhqgNPPeya6TpMSf1D1hJb9gh1Ga4WNLU1YJS&date=${defineDate}&concept_tags=True`;
+    const api_key = 'm4pzhqgNPPeya6TpMSf1D1hJb9gh1Ga4WNLU1YJS';
+    const URL = `https://api.nasa.gov/planetary/apod?api_key=${api_key}&date=${defineDate}&concept_tags=True`;
 
     fetch(URL)
     .then((readURL) => readURL.json())
@@ -31,7 +32,11 @@ function fnAction(defineDate) {
           `;
     })
 
-    .catch((error) => console.log(error));
+    .catch((error) => {
+      if(error == 400){
+        alert('This image not ')
+      }
+    });
 
 }
 
