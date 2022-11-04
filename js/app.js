@@ -9,8 +9,10 @@ function fnAction(defineDate) {
     .then((readURL) => readURL.json())
     .then((readJson) => {
 
-        // console.log(readJson.url)
+        // console.log(readJson)
+      if(!readJson.code){
 
+      
         const result = document.getElementById('root')
         result.innerHTML = `
 
@@ -30,6 +32,25 @@ function fnAction(defineDate) {
       </div>
             
           `;
+      }
+      else{
+        const result = document.getElementById('root')
+        result.innerHTML = `
+        <div class="card mb-3" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="/img/erro_404.jpg" class="img-fluid rounded-start" alt="Imagem de um desenho, referindo de uma imagem não encontrada.">
+          </div>
+          <div class="col-lg-6">
+            <div class="card-body">
+              <h5 class="card-title" style="color: red;">Imagem não encontrada!</h5>
+              <p class="card-text">Por favor, digite uma data a partir do dia  20/06/1995</p>
+            </div>
+          </div>
+        </div>
+      </div>`
+
+      }
     })
 }
 
