@@ -31,13 +31,6 @@ function fnAction(defineDate) {
             
           `;
     })
-
-    .catch((error) => {
-      if(error == 400){
-        alert('This image not ')
-      }
-    });
-
 }
 
 fnAction();

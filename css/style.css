@@ -20,3 +20,9 @@
     width: 600px;
     height: auto;
 }
+
+.alertDate{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+}
