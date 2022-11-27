@@ -39,7 +39,7 @@ function fnAction(defineDate) {
         <div class="card mb-3" style="max-width: 1200px;">
         <div class="row g-0">
           <div class="col-md-6">
-            <img src="/img/erro_404.jpg" class="img-fluid rounded-start" alt="Imagem de um desenho, referindo de uma imagem não encontrada.">
+            <img src="img/erro_404.jpg" class="img-fluid rounded-start" alt="Imagem de um desenho, referindo de uma imagem não encontrada.">
           </div>
           <div class="col-lg-6">
             <div class="card-body">
